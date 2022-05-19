@@ -9,13 +9,16 @@ const otrosGIFS = ['https://media4.giphy.com/media/ZFTKZ8zwj38gE/giphy.gif?cid=e
 
 function App() {
   const [gif, setGif] = useState(GIFS);
-  
+  let cambiarGifs = () =>{
+   if(gif === GIFS) setGif(otrosGIFS)
+   else setGif(GIFS)
+  }
 
   return (
     <div className="App">
       <section className="app-content">
         {gif.map((g)=><img src={g}></img>)}
-        <button onClick={() => setGif(otrosGIFS)}>CAMBIAR GIFS</button>
+        <button onClick={() => cambiarGifs()}>CAMBIAR GIFS</button>
       </section>
     </div>
   );
