@@ -2,6 +2,15 @@
   text-align: center;
 }
 
+.nav {
+  background-color: coral;
+  height: 50px;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  color: black
+}
+
 .app-content {
   background-color: #282c34;
   min-height: 100vh;
@@ -11,4 +20,15 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+.app-content2 {
+    background-color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: brown;
 }
