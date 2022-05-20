@@ -10,6 +10,6 @@ export default function ListOfCards({ palabraClave }){
         getGifs({ palabraClave }).then(gifs => setGif(gifs))
     },[palabraClave])
 
-    return gif.map(({title, id, url}) => <Cards title={title} id={id} url={url} /> )
+    return gif.map(({title, id, url}) => <Cards key={id} title={title} id={id} url={url} /> )
 
 }
